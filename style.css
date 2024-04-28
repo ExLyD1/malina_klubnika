@@ -1,0 +1,175 @@
+*{
+  margin:0px;
+  padding: 0px;
+}
+body{
+  background-color: #D4C9EF;
+}
+header {
+  width: 100%;
+  border-bottom: 3px solid #A0B1F0;
+}
+.itemHolder{
+  width: 95%;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+
+}
+.headerItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:20px;
+}
+.imgHolder{
+  height: 50px;
+  width: 50px;
+}
+.imgHolder img{
+  width: 100%;
+  height: 100%;
+}
+.fullContentHolder{
+  width: 95%;
+  margin: auto;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap:30px
+}
+
+.aside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  
+}
+.highlight{
+  background-color: #ECABEF;
+}
+.asideItemsHolder{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  width: 100%;
+  cursor: pointer;
+}
+.asideImgHolder{
+  width: 35px;
+  height: 35px;
+}
+.asideImgHolder img{
+  width: 100%;
+  height: 100%;
+}
+
+.lettersHolder{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.letter{
+  width: 100%;
+  border-bottom: 1px solid #A0B1F0;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.letter:not(:first-of-type){
+  padding-top:10px;
+}
+
+.imgLetterHolderStar, .imgLetterHolder{
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.text{
+  width: 82%;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.textWithout{
+  width: 82%;
+  padding-right: 75px;
+  display: flex;
+  flex-direction: row;
+}
+.sender{
+  width: 20%;
+}
+.title{
+  width: 80%;
+}
+.content{
+  color: gray;
+}
+.imgLetterHolder, .imgLetterHolderStar{
+  height: 25px;
+  width: 25px;
+}
+.imgLetterHolder img, .imgLetterHolderStar img{
+  width: 100%;
+  height: 100%;
+}
+br{
+  display: none;
+}
+
+@media screen and (max-width:800px) {
+  .letter{
+    align-items: flex-start;
+  }
+  br{
+    display: block;
+  }
+  .imgLetterHolderStar, .imgLetterHolder{
+    height: 20px;
+    width: 20px;
+  }
+  .imgLetterHolder{
+    padding:0px;
+  }
+  .data{
+    font-size: 14px;
+    padding-left: 10px;
+    white-space: nowrap;
+  }
+  .text, .textWithout{
+    flex-direction: column;
+  }
+  .content{
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width:550px) {
+  .fullContentHolder{
+    gap: 10px;
+  }
+  .aside{
+    width: auto;
+  }
+  .asideItemsHolder{
+    width: auto;
+  }
+  .asideItemsHolder p{
+    display: none;
+  }
+  .sender{
+    white-space: nowrap;
+  }
+  .imgLetterHolderStar{
+    padding: 0px;
+    padding-right: 10px;
+  }
+}
